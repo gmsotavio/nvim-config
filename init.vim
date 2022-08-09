@@ -50,6 +50,7 @@ endif
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ap/vim-css-color'
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 
 call plug#end()
 
@@ -64,7 +65,17 @@ nnoremap <S-Tab> gT
 nnoremap <Tab> gt
 nnoremap <silent> <S-t> :tabnew<CR>
 
-colorscheme github_*
+"colorscheme github_*
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
+colorscheme spaceduck
+
+let g:airline_theme = 'spaceduck'
 
 " Some servers have issues with backup files, see #649.
 set nobackup
