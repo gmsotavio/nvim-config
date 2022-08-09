@@ -49,6 +49,17 @@ call plug#end()
 
 let g:airline_theme='simple'
 
+" Normal mode remappings
+nnoremap <C-q> :q!<CR>
+nnoremap <F4> :bd<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
+nnoremap <F6> :sp<CR>:terminal<CR>
+
+" Tabs
+nnoremap <S-Tab> gT
+nnoremap <Tab> gt
+nnoremap <silent> <S-t> :tabnew<CR>
+
 colorscheme github_*
 
 " Some servers have issues with backup files, see #649.
