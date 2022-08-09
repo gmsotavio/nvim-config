@@ -1,5 +1,12 @@
-set number
-set relativenumber
+:set number
+:set relativenumber
+:set autoindent
+:set tabstop=4
+:set shiftwidth=4
+:set smarttab
+:set softtabstop=4
+:set mouse=a
+:set encoding=UTF-8
 
 call plug#begin()
 " The default plugin directory will be as follows:
@@ -25,6 +32,18 @@ Plug 'rhysd/vim-clang-format'
 Plug 'projekt0n/github-nvim-theme'
 Plug 'cdelledonne/vim-cmake'
 Plug 'vim-airline/vim-airline'
+"Plug 'airblade/vim-gitgutter'
+Plug 'ryanoasis/vim-devicons'
+
+if has('nvim') || has('patch-8.0.902')
+  Plug 'mhinz/vim-signify'
+else
+  Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
+endif
+
+Plug 'sheerun/vim-polyglot'
+Plug 'jiangmiao/auto-pairs'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
