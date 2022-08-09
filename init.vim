@@ -6,6 +6,7 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set encoding=UTF-8
 
 call plug#begin()
 " The default plugin directory will be as follows:
