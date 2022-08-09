@@ -53,8 +53,6 @@ Plug 'ap/vim-css-color'
 
 call plug#end()
 
-let g:airline_theme='simple'
-
 " Normal mode remappings
 nnoremap <C-q> :q!<CR>
 nnoremap <F4> :bd<CR>
