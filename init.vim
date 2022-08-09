@@ -32,6 +32,7 @@ Plug 'projekt0n/github-nvim-theme'
 Plug 'cdelledonne/vim-cmake'
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
