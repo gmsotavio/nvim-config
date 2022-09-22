@@ -50,16 +50,20 @@ endif
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ap/vim-css-color'
-Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+"Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'ciaranm/inkpot'
 " Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'gosukiwi/vim-atom-dark'
 Plug 'Matsuuu/pinkmare'
 Plug 'catppuccin/vim'
+Plug 'wuelnerdotexe/vim-enfocado'
+Plug 'honza/vim-snippets'
+Plug 'github/copilot.vim'
 call plug#end()
 
 noremap <leader>q :q!<Enter>
+noremap <Leader>0 :CocCommand rest-client.request <cr>
 
 " Normal mode remappings
 nnoremap <C-q> :q!<CR>
@@ -72,9 +76,8 @@ nnoremap <S-Tab> gT
 nnoremap <Tab> gt
 nnoremap <silent> <S-t> :tabnew<CR>
 
-set termguicolors
-" colorscheme pinkmare 
-colorscheme github_dark
+"colorscheme pinkmare 
+"colorscheme github_dark
 
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -83,6 +86,14 @@ if exists('+termguicolors')
 endif
 
 " let g:airline_theme='atom-dark'
+
+
+set termguicolors
+set background=dark
+colorscheme enfocado
+let g:airline_theme = 'enfocado'
+"let g:enfocado_style = 'neon'
+
 
 " Some servers have issues with backup files, see #649.
 set nobackup
