@@ -51,7 +51,12 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ap/vim-css-color'
 Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
-
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'ciaranm/inkpot'
+" Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'gosukiwi/vim-atom-dark'
+Plug 'Matsuuu/pinkmare'
+Plug 'catppuccin/vim'
 call plug#end()
 
 " Normal mode remappings
@@ -65,7 +70,9 @@ nnoremap <S-Tab> gT
 nnoremap <Tab> gt
 nnoremap <silent> <S-t> :tabnew<CR>
 
-"colorscheme github_*
+set termguicolors
+" colorscheme pinkmare 
+colorscheme github_dark
 
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -73,9 +80,7 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-colorscheme spaceduck
-
-let g:airline_theme = 'spaceduck'
+" let g:airline_theme='atom-dark'
 
 " Some servers have issues with backup files, see #649.
 set nobackup
