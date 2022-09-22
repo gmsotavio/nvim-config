@@ -1,18 +1,18 @@
-:set number
-:set relativenumber
-:set autoindent
-:set tabstop=4
-:set shiftwidth=4
-:set smarttab
-:set softtabstop=4
-:set mouse=a
-:set encoding=UTF-8
-:set cursorline
-:set completeopt=noinsert,menuone,noselect
-:set splitbelow splitright
-:set title
-:set ttimeoutlen=0
-:set wildmenu
+set number
+set relativenumber
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set softtabstop=4
+set mouse=a
+set encoding=UTF-8
+set cursorline
+set completeopt=noinsert,menuone,noselect
+set splitbelow splitright
+set title
+set ttimeoutlen=0
+set wildmenu
 
 call plug#begin()
 " The default plugin directory will be as follows:
