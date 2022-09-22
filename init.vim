@@ -13,6 +13,7 @@ set splitbelow splitright
 set title
 set ttimeoutlen=0
 set wildmenu
+set colorcolumn=80
 
 call plug#begin()
 " The default plugin directory will be as follows:
