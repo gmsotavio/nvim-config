@@ -59,6 +59,8 @@ Plug 'Matsuuu/pinkmare'
 Plug 'catppuccin/vim'
 call plug#end()
 
+noremap <leader>q :q!<Enter>
+
 " Normal mode remappings
 nnoremap <C-q> :q!<CR>
 nnoremap <F4> :bd<CR>
