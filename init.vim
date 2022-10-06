@@ -15,6 +15,11 @@ set ttimeoutlen=0
 set wildmenu
 set colorcolumn=80
 
+" Enable per project settings in vim
+" https://medium.com/@dnrvs/per-project-settings-in-nvim-fc8c8877d970
+set exrc
+set secure
+
 call plug#begin()
 " The default plugin directory will be as follows:
 "   - Vim (Linux/macOS): '~/.vim/plugged'
@@ -61,7 +66,10 @@ Plug 'catppuccin/vim'
 Plug 'wuelnerdotexe/vim-enfocado'
 Plug 'honza/vim-snippets'
 Plug 'github/copilot.vim'
+Plug 'luochen1990/rainbow'
 call plug#end()
+
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 
 noremap <leader>q :q!<Enter>
 noremap <Leader>0 :CocCommand rest-client.request <cr>
@@ -86,14 +94,14 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-" let g:airline_theme='atom-dark'
+let g:airline_theme='atom-dark'
 
 
 set termguicolors
 set background=dark
 colorscheme enfocado
-let g:airline_theme = 'enfocado'
-"let g:enfocado_style = 'neon'
+"let g:airline_theme = 'enfocado'
+let g:enfocado_style = 'neon'
 
 
 " Some servers have issues with backup files, see #649.
