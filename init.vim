@@ -68,6 +68,8 @@ Plug 'honza/vim-snippets'
 Plug 'github/copilot.vim'
 Plug 'luochen1990/rainbow'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
+Plug 'B4mbus/oxocarbon-lua.nvim'
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
